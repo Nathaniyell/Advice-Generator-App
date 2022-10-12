@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Public+Sans:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+:root{
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+--padding:20px 15px;
+}
+.card{
+    position: relative;
+    background-color: var(--Dark-Grayish-Blue);
+    width: 500px;
+    max-width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.card h1{
+    color: var(--Neon-Green);
+    font-size: 20px;
+}
+.card p{
+    color: var(--Light-Cyan);
+    font-weight: 600;
+    font-size: 28px;
+}
+.card>img{
+    margin-block: 20px;
+}
+button{
+    background-color: var(--Neon-Green);
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+button:hover{
+    filter: drop-shadow(2px 2px 24px var(--Neon-Green));
+}
+.attribution { 
+    margin-top: 40px;
+    font-size: 1.3rem;
+    text-align: center; 
+    color: var(--Light-Cyan);
+}
